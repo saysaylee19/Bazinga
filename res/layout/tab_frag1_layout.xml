@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/globalpanel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     
+     >
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:id="@+id/idTopLayout"
+         android:background="@null"
+         android:padding="2dp" 
+         android:layout_alignParentTop="true">
+     	
+                  
+         
+<!--          <com.example.frag.DeleteZone -->
+<!--              android:id="@+id/mDeleteZoneView" -->
+<!-- 			android:layout_width="50dp" -->
+<!-- 			android:layout_height="50dp" -->
+<!-- 			android:layout_alignParentRight="true" -->
+<!-- 			android:layout_centerVertical="true"              -->
+<!--              > -->
+             
+<!--          </com.example.frag.DeleteZone> -->
+     </RelativeLayout>
+     
+<!--      <com.example.frag.DynGridView  -->
+<!--          android:id="@+id/mDynGridView" -->
+<!--          android:layout_width="fill_parent" -->
+<!--          android:layout_height="fill_parent" -->
+<!--          android:numColumns="2" -->
+<!--          android:layout_below="@+id/idTopLayout"> -->
+         
+<!--      </com.example.frag.DynGridView> -->
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<FrameLayout
+      android:id="@+id/vp"
+      android:layout_width="match_parent"
+      android:layout_height="200dp" >
+      <ImageView
+  		android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="225dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/flash" />
+     </FrameLayout>
+     <LinearLayout 
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:rotation="180">
+
+	<SlidingDrawer
+	    android:id="@+id/slidingDrawer1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:content="@+id/content"
+	    android:handle="@+id/handle"
+	    android:topOffset="270dp" >
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:gravity="right"
+        >
+		<Button android:layout_height="25dp"
+		    android:layout_marginLeft="45dp"
+		    android:layout_gravity="right"
+		    android:layout_marginRight="15dp"
+		    android:layout_alignParentRight="true"
+			android:layout_width="25dp" android:id="@+id/handle"
+			android:background="@drawable/pullnow"></Button>
+		</RelativeLayout>
+		<LinearLayout android:id="@+id/content"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:gravity="center"
+			android:background="#FF444444"
+			>
+			<GridView
+        android:id="@+id/gvMru"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:padding="5dip"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="50dp"
+        android:scrollingCache="false"
+        android:rotation="180"
+    />
+		</LinearLayout>
+	</SlidingDrawer>
+</LinearLayout>
+     
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+<FrameLayout
+      android:id="@+id/vp2"
+      android:paddingTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/vp"
+     >
+        
+<TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/vp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/curved"
+                style="@style/MyTabStyle"
+                
+                android:orientation="horizontal" >
+            </TabWidget>
+ 
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"/>
+ 
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </TabHost>
+   </FrameLayout> 
+   
+
+<SlidingDrawer
+	    android:id="@+id/slidingDrawer2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="600dp"
+	    android:content="@+id/content2"
+	    android:handle="@+id/nohandle" >
+<Button android:layout_width="0dp" android:layout_height="0dp"
+                android:id="@+id/nohandle">
+            </Button>
+    
+<LinearLayout android:id="@+id/content2"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:gravity="center"
+			android:background="#FF444444"
+			>
+		            
+ <GridView
+        android:id="@+id/gvMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:padding="10dip"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="50dp"
+        android:scrollingCache="false"
+    />
+ </LinearLayout>
+   </SlidingDrawer> 
+	
+
+
+
+
+
+</RelativeLayout>
